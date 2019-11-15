@@ -75,7 +75,6 @@ COPY config/airflow.cfg ${AIRFLOW_USER_HOME}/airflow.cfg
 
 RUN chown -R airflow: ${AIRFLOW_USER_HOME}
 RUN mkdir ${AIRFLOW_USER_HOME}/dags
-COPY script/framework.py ${AIRFLOW_USER_HOME}/dags
 
 EXPOSE 8080 5555 8793
 
